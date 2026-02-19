@@ -1,4 +1,4 @@
-import { LocaleSelector } from "gt-next";
+import { LocaleSelector, T } from "gt-next";
 import NavLink from "./NavLink";
 
 export default function Header() {
@@ -12,11 +12,11 @@ export default function Header() {
             rel="noopener noreferrer"
             className="text-sm font-medium text-neutral-400 hover:text-neutral-200 transition-colors"
           >
-            General Translation
+            <T>General Translation</T>
           </a>
           <span className="text-neutral-700">/</span>
           <h1 className="text-sm font-semibold text-neutral-100">
-            Locale Routing
+            <T>Locale Routing</T>
           </h1>
         </div>
         <div className="flex items-center gap-3">
@@ -40,9 +40,9 @@ export default function Header() {
         </div>
       </div>
       <nav className="max-w-3xl mx-auto px-6 pb-3 flex gap-4">
-        <NavLink href="/">Home</NavLink>
-        <NavLink href="/about">About</NavLink>
-        <NavLink href="/features">Features</NavLink>
+        <NavLink href="/"><T>Home</T></NavLink>
+        <NavLink href="/about"><T>About</T></NavLink>
+        <NavLink href="/features"><T>Features</T></NavLink>
       </nav>
     </header>
   );
