@@ -1,0 +1,22 @@
+{
+  "1058ce2304b00e32": "El componente integrado LocaleSelector permite a los usuarios cambiar de idioma en cualquier momento. Actualiza la ruta de la URL y la cookie simultáneamente, proporcionando una experiencia fluida en todas las páginas.",
+  "148a0bff46586b4e": "Enrutamiento automático de idioma",
+  "1cee8d1b264f328b": "Características principales",
+  "26fd461cccba7d45": "Traducciones locales",
+  "3337965ebce7825f": "Una vez que un visitante selecciona un idioma, la elección se guarda en una cookie. En visitas posteriores, el middleware respeta esta preferencia y enruta en consecuencia.",
+  "3a44c26025c876ca": "El middleware de enrutamiento de idioma ofrece varias funcionalidades listas para usar, con una configuración mínima por parte del desarrollador.",
+  "41c7f96b781b3840": "Los archivos de traducción se generan en tiempo de compilación mediante el CLI de GT y se confirman en el repositorio. Esto significa que no hay llamadas a la API en tiempo de ejecución ni dependencias externas: las traducciones se cargan instantáneamente desde archivos JSON estáticos.",
+  "4fb8a06515d72f3e": "Cero configuración",
+  "550044aa9247afbb": "Soporte multipágina",
+  "6b6cb79c7064b74d": "Acerca de esta demo",
+  "8ee27fb9994bf9d5": "Navega entre Home, About y Features para verificar que cada página mantiene el prefijo de idioma correcto. El middleware garantiza un enrutamiento consistente en toda la aplicación sin necesidad de configuración por página.",
+  "ac74b39e248add30": "Integración del selector de idioma",
+  "ad54e12e3dc51171": "Una sola llamada a createNextMiddleware() es todo lo que necesitas. Lee los idiomas admitidos desde gt.config.json y gestiona automáticamente la detección, las redirecciones y la persistencia de cookies.",
+  "adfbe385b087ea7f": "Este demo muestra cómo createNextMiddleware detecta automáticamente el idioma preferido del usuario y lo redirige a la ruta de configuración regional correcta. Prueba a cambiar de idioma con el selector de arriba, o navega entre páginas para ver las URLs con prefijo de configuración regional en acción.",
+  "af74dbb797ec8308": "Esta aplicación demuestra el enrutamiento de URL basado en configuración regional mediante el middleware de Next.js de General Translation. Cada página reside bajo un segmento dinámico [locale], y las traducciones se empaquetan localmente para una entrega rápida y confiable.",
+  "c4100abf145186d9": "Persistencia de cookies",
+  "c7ea9f2de09ae99b": "Cómo funciona",
+  "e7eca65f883b9955": "El middleware intercepta cada solicitud y verifica el encabezado Accept-Language, las cookies y la ruta de la URL para determinar el idioma más adecuado. Si no hay ningún segmento de idioma presente, redirige al correspondiente — por ejemplo, /about se convierte en /fr/about para un visitante de habla francesa.",
+  "f7fbc4bb34afe655": "El middleware lee el encabezado Accept-Language del navegador y lo compara con los idiomas configurados. Los visitantes nuevos son redirigidos automáticamente a su idioma preferido.",
+  "fa11d8072872f7fd": "Detección automática de idioma"
+}

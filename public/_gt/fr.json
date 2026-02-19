@@ -1,0 +1,22 @@
+{
+  "1058ce2304b00e32": "Le composant LocaleSelector intégré permet aux utilisateurs de changer de langue à tout moment. Il met à jour le chemin URL et le cookie simultanément, offrant une expérience fluide sur toutes les pages.",
+  "148a0bff46586b4e": "Routage automatique des paramètres régionaux",
+  "1cee8d1b264f328b": "Fonctionnalités clés",
+  "26fd461cccba7d45": "Traductions locales",
+  "3337965ebce7825f": "Lorsqu'un visiteur sélectionne une langue, le choix est enregistré dans un cookie. Lors des visites suivantes, le middleware respecte cette préférence et effectue le routage en conséquence.",
+  "3a44c26025c876ca": "Le middleware de routage par locale offre plusieurs fonctionnalités prêtes à l'emploi, nécessitant une configuration minimale de la part du développeur.",
+  "41c7f96b781b3840": "Les fichiers de traduction sont générés au moment de la compilation via le CLI GT et intégrés au dépôt. Cela signifie aucun appel API à l'exécution et aucune dépendance externe — les traductions se chargent instantanément depuis des fichiers JSON statiques.",
+  "4fb8a06515d72f3e": "Zéro configuration",
+  "550044aa9247afbb": "Support multipage",
+  "6b6cb79c7064b74d": "À propos de cette démo",
+  "8ee27fb9994bf9d5": "Naviguez entre Home, About et Features pour vérifier que chaque page conserve le bon préfixe de locale. Le middleware assure un routage cohérent dans toute l'application, sans aucune configuration par page.",
+  "ac74b39e248add30": "Intégration du sélecteur de langue",
+  "ad54e12e3dc51171": "Un seul appel à createNextMiddleware() suffit. Il lit vos locales prises en charge depuis gt.config.json et gère automatiquement la détection, les redirections et la persistance des cookies.",
+  "adfbe385b087ea7f": "Cette démo montre comment createNextMiddleware détecte automatiquement la langue préférée de l'utilisateur et le redirige vers le chemin de locale approprié. Essayez de changer de langue avec le sélecteur ci-dessus, ou naviguez entre les pages pour voir les URL préfixées par la locale en action.",
+  "af74dbb797ec8308": "Cette application illustre le routage d'URL basé sur les paramètres régionaux à l'aide du middleware Next.js de General Translation. Chaque page est placée sous un segment [locale] dynamique, et les traductions sont intégrées localement pour une diffusion rapide et fiable.",
+  "c4100abf145186d9": "Persistance des cookies",
+  "c7ea9f2de09ae99b": "Comment ça marche",
+  "e7eca65f883b9955": "Le middleware intercepte chaque requête et vérifie l'en-tête Accept-Language, les cookies et le chemin URL pour déterminer la locale la plus appropriée. Si aucun segment de locale n'est présent, il redirige vers le bon — par exemple, /about devient /fr/about pour un visiteur francophone.",
+  "f7fbc4bb34afe655": "Le middleware lit l'en-tête Accept-Language du navigateur et le compare à vos paramètres régionaux configurés. Les nouveaux visiteurs sont automatiquement redirigés vers leur langue préférée.",
+  "fa11d8072872f7fd": "Détection automatique de la langue"
+}
